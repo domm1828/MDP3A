@@ -1,0 +1,154 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #425067;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    width: 100%;
+    height: 70px;
+    background-color: #EEEEEE;
+}
+/*
+header nav ul li{
+    list-style-type: none;
+    float: left;
+    border-right: 2px solid #2D3646;
+    
+}
+header nav ul li a{
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+    color: #2D3646;
+}
+header nav ul li a:hover{
+    background-color: white;
+    color: black;
+}*/
+
+main{
+    background-color: white;
+    width: 70%;
+    float: left; 
+}
+main img{
+    max-width: 50%;
+    margin: 20px;
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 50px 20px 20px 10px;
+}
+main section{
+    padding: 30px;
+}
+main section p{
+    margin-bottom: 15px;
+    text-align: justify;
+    line-height: 200%;
+}
+h2{
+    margin-bottom: 15px;
+    font-size: 1.6em;
+}
+aside{
+    width: 30%;
+    background-color: #25d6c8;
+    float: right;
+    padding: 30px;
+}
+aside ul li{
+    list-style-type: none;
+    color: black;
+    margin-bottom: 15px;
+    border-bottom: 1px solid black;
+}
+footer{
+    clear: both;
+    color: white;
+    text-align: center;
+    width: 70%;
+    padding: 30px;
+    background-color: orange;
+}
+.principal{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+div.img{
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding-top: 10px;
+    background-color: #2D3646;
+}
+div.img img{
+    width: 100%;
+    height: auto;
+}
+div.description{
+    padding: 5px;
+    text-align: center;
+    color: white;
+}
+div.img:hover{
+    border: 1px solid yellow;
+}
+
+main section p::first-letter{
+    font-size: 200%;
+    color:orange;
+}
+
+.oculto{
+    display: none;
+}
+
+#menu{
+    margin-top: 10px;
+}
+#menu ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    float: left;
+}
+#menu ul a{
+    display: block;
+    color:black;
+    text-decoration: none;
+    padding: 0px 15px;
+    line-height: 32px;
+}
+#menu ul li{
+    position: relative;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+#menu ul li a:hover{
+    background-color: black;
+    color: white;
+}
+#menu ul ul {
+    display: none;
+    position: absolute;
+    background-color: black;
+}
+#menu ul ul li{
+    float: none;
+    width: 200px;
+}
+#menu ul ul li a{
+    color: white;
+}
+#menu ul li:hover > ul{
+    display: block;
+}
+#menu ul ul li a:hover{
+    color:red;
+}

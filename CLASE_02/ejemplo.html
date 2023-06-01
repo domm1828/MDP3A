@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 02</title>
+</head>
+
+<body>
+    <a href="#yellow">yellow</a>
+    <div id="red" style="background-color: red; height: 70vh; width: 100;"></div>
+    <div id="blue" style="background-color: blue; height: 70vh; width: 100;"></div>
+    <div id="yellow" style="background-color: orange; height: 70vh; width: 100;"></div>
+    <!-- ENLACES -->
+    <a title="Ejemplo" href="./archivos/Etiquetas.pdf" target="_blank">Enlaces</a>
+    <a href="https://w3.org" target="_blank">Prueba</a>
+    <a href="./archivos/Alin.xlsx">Excel</a>
+    <!-- Enlaces Email -->
+    <a href="mailto:ejemplo@gmail.com">Correo</a>
+    <!-- Enlaces Telefonos-->
+    <a href="tel:+5491111111">Telefono</a>
+    <!-- Enlaces en seccion-->
+    <a href="#red">Red</a>
+    <a href="#blue">blue</a>
+
+    <!-- Images -->
+    <img src="./archivos/Processing.jpg" width="200" height="50" title="Image" alt="Ejemplo de imagen">
+    <img src="https://www.w3.org/blog/news/files/2018/05/w3c-ab-300x300.jpg" title="Image" alt="Ejemplo">
+
+    <a href="https://www.w3.org">
+        <img src="https://www.w3.org/blog/news/files/2018/05/w3c-ab-300x300.jpg" width="100">
+    </a>
+
+    <!-- Etiquetas de Lista -->
+    <ol>
+        <li> Tema 1 </li>
+        <li> Tema 2</li>
+        <li> Tema 3</li>
+    </ol>
+    <ul>
+        <li> Tema 1</li>
+        <li> Tema 2</li>
+    </ul>
+
+    <!-- Table -->
+    <table border="1" width="100%">
+        <thead>
+            <tr>
+                <th>uno</th>
+                <th>dos</th>
+                <th>tres</th>
+                <th>cuatro</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>uno</th>
+                <th>dos</th>
+                <th>tres</th>
+                <th>cuatro</th>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table border="1" width="100%">
+        <tr>
+            <td colspan="3">1</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+        </tr>
+    </table>
+    <table border="1" width="100%">
+        <tr>
+            <td rowspan="3">1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td colspan="2">1</td>
+        </tr>
+    </table>
+    <br>
+    <!--Etiquetas de formulario -->
+    <form>
+        <!-- CAJA DE TEXTO input 
+        TEXT -> caja de texto - default
+        PASSWORD -> viñetas..
+        NUMBER -> NUMERICO
+        DATE -> FECHA
+        RADIO -> SELECCION SIMPLE
+        CHECKBOX -> SELECCION MULTIPLE
+        HIDDEN -> OCULTO
+        FILE -> EXAMINAR--
+        -->
+        <input type="text" name="" placeholder="Texto..." required><br>
+        <input type="password"><br>
+        <input type="number" value="10" readonly><br>
+        <input type="file"> <br>
+        <input type="date" value="2022-02-02" min="2022-01-01" max="2023-07-31">
+        <br>
+        <input id="mujer" type="radio" value="M" name="genero">
+        <label for="mujer">Mujer</label>
+        <input id="hombre" type="radio" Value="H" name="genero" checked>
+        <label for="hombre">Hombre</label>
+        <input id="ninguno" type="radio" Value="." name="genero">
+        <label for="ninguno">...</label>
+
+        <input type="checkbox" value="G" name="seleccion"> G
+        <input type="checkbox" value="h" name="seleccion" checked> H
+        <input type="checkbox" value="I" name="seleccion"> I
+
+        <input type="submit" value="Enviar..">
+
+        <!-- BOTONES -->
+        <button type="submit">ENVIAR LA INFORMACION</button>
+        <button type="reset">LIMPIAR LAS CAJA DE TEXTO</button>
+        <!-- textArea -->
+        <textarea name="nombre" placeholder="Titulo" rows="6" cols="15"></textarea>
+        <!-- SELECT Lista desplegable -->
+        <select name="" required >
+            <option value="">SELECCIONE</option>
+            <optgroup label="Cafe Brasileño">
+                <option value="1">Uno</option>
+                <option value="2">dos</option>
+            </optgroup>
+            <optgroup label="Cafe Colombiano">
+                <option value="3" selected>tres</option>
+                <option value="4">4444</option>
+            </optgroup>
+        </select>
+        <select>
+            <option>...</option>
+        </select>
+    </form>
+
+
+    <br>
+    <br>
+
+</body>
+
+</html>

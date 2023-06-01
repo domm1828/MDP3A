@@ -1,0 +1,71 @@
+code{
+    font-size: 3em;
+    color :#cecece;
+    background-color: #FFFFFF; 
+ }
+ .codeUno{
+     color:red;
+ }
+ #codeUno{
+     color:blue;
+ }
+
+ p > b{
+     color:yellow;
+ }
+
+ p,b,code,#codeUno,#codeDos{
+     font-size: 10px;
+     padding: 10px;
+ }
+ p .codeUno {
+     background-color: black;
+     color: white;
+ }
+
+ .class + p{
+
+ }
+
+ [title=Click2] {
+     color:orange;
+     font-size: 2em;
+ }
+
+ /* PSEUDO CLASS : :: */
+ 
+ p:first-child{
+    background-color: #000000;
+    font-size: 18px;
+ }
+
+ p:hover, a:hover{
+    font-size: 30px;
+ }
+
+ li:nth-child(2){
+    background: lightgreen;
+ }
+ :nth-child(3){
+    background: yellow;
+ }
+
+ p::after{
+    content: ". (Ejemplo) ";
+ }
+ p::before{
+    content: "Prueba: ";
+    text-decoration: underline;
+ }
+
+ p::first-letter{
+    background-color: #000000;
+    color: white;
+    padding: 2px;
+ }
+ input:focus{
+    padding: 5px;
+    border:2px solid red;
+    background-color: #000000;
+    color:white;
+ }
