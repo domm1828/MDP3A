@@ -1,0 +1,93 @@
+@font-face{
+    font-family: 'LibreBaskerville-Bold';
+    src:url(fonts/LibreBaskerville-Bold.ttf)
+}
+@font-face{
+    font-family: 'LibreBaskerville';
+    src:url(fonts/LibreBaskerville-Italic.ttf)
+}
+
+body{
+    font-family: 'LibreBaskerville-Bold';
+}
+h1{
+    font-family: 'LibreBaskerville';
+}
+.card-profile{
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(255,0,0,0.6) ;
+}
+.title{
+    color: grey;
+    font-size: 14px;
+}
+button{
+    width: 100%;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor:pointer;
+    background-color: black;
+    color:white;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+button:hover,a:hover{
+    opacity: 0.7;
+}
+.card-profile img{
+    width: 100%;
+    background-color: black;
+}
+
+.alert{
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+.alert.warning{
+    background-color: orange;
+    color: white;
+}
+.alert .btn{
+    float: right;
+    margin-left: 15px;
+    color: white;
+    font-size: 20px;
+    line-height: 20px;
+    cursor: pointer;
+}
+.alert .btn:hover{
+    color:black;
+}
+
+.alert.error{
+    background-color: red;
+    color: white;
+}
+
+.alert.success{
+    background-color: green;
+    color: white;
+}
+.scroll{
+    overflow: auto;
+ 
+    height: 300px; 
+}
+.scroll::-webkit-scrollbar{
+    width: 12px;
+}
+.scroll::-webkit-scrollbar-track{
+    background-color: orange;
+}
+.scroll::-webkit-scrollbar-thumb{
+    background-color: red;
+    border-radius: 20px;
+    border: 3px solid orange;
+}
