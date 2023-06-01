@@ -91,3 +91,48 @@ button:hover,a:hover{
     border-radius: 20px;
     border: 3px solid orange;
 }
+p{
+    outline-color: red;
+    border: 2px solid; 
+}
+p.dotted{
+    outline-style: dotted;
+}
+p.dashed{
+    outline-style: dashed;
+}
+p.solid{
+    outline-style: solid;
+}
+
+p.double{
+    outline-style: double;
+}
+p.groove{
+    outline-style:groove;
+}
+p.ridge{
+    outline-style:ridge;
+}
+p.inset{
+    outline-style:inset;
+}
+p.outset{
+    outline-width: 10px;
+    outline-style:outset;
+}
+
+.conic{
+    background-image: linear-gradient(red, yellow, green,blue,black);
+    min-width: 50%;
+    height: 100vh; 
+    
+}
+
+.fondoImg{
+    background-image: url(../profile.png);
+    height: 45vh; 
+    width: 40%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
