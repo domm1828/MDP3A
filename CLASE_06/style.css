@@ -1,0 +1,166 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+p:hover{
+    color: red !important;
+}
+p:first-child{
+    color:blue;
+}
+input:focus{
+    background-color: black;
+    color: white;
+}
+input:invalid{
+    color:red;
+}
+p:last-child{
+    color: orange;
+}
+p:nth-child(3){
+    background-color: blue;
+}
+a:link{
+    color: #FF0000;
+}
+a:visited{
+    color: #00FF00;
+}
+a:hover{
+    color:#FF00FF;
+}
+a:active{
+    color: black;
+}
+
+p::first-line{
+    font-size: 50px;
+}
+p::first-letter{
+    color: orange;
+}
+p::after{
+    content: "a ->";
+}
+p::before{
+    content: "c:->";
+}
+.round{
+    min-width: 262px;
+    min-height: 76px;
+    background: #21282B;
+    border-radius: 20px;
+    box-shadow: inset 20px 4px 4px rgba(230, 25, 25, 0.96);
+}
+
+div.background{
+    background: url(./Landscape-Color.jpg);
+    border: 2px solid black;
+    position: relative;
+    z-index: 1;
+}
+div.transbox{
+    margin: 30px;
+     
+    position: relative;
+    z-index: 2;
+}
+div.transbox small{
+    margin: 5px;
+    font-weight: bold;
+    color: white;
+}
+div.background::after{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color:rgba(0,0,0,0.6);
+
+}
+.fixed{
+    position: fixed;
+    background-color: black;
+    top: 0px;
+    z-index:999;
+}
+.divp{
+    position: relative;
+    width: 500px;
+    height: 600px;
+    border: 2px dashed black;
+}
+
+.divp .div{
+    font-size: 30px;
+    width: 120px;
+    height: 60px;
+}
+.divp .div.a{
+    background-color: blue;
+    position: absolute;
+    bottom:0;
+    right: 0;
+    z-index: 2;
+    background-image: url(./profile.png);
+    background-size: 100% 100%;
+}
+
+.divp .div.a-1{
+    background-color: green;
+    position: absolute;
+    bottom:35px;
+    right: 20%;
+    z-index: 1;
+}
+
+.divp .div.b{
+    background-color: red;
+    position: absolute;
+    top:0;
+    right: 0;
+}
+
+.divp .div.c{
+    background-color: orange;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.divp .div.d{
+    background-color: black;
+    position: absolute;
+    bottom:0;
+    left: 0;
+}
+
+.divp .div.e{
+    background-color: green;
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom:0;
+    left: 0;
+    margin: auto;
+}
+/*
+.divp .div.b{
+    left: 50px;
+    background-color: orange;
+    z-index: 3;
+    width: 100px;
+}
+.divp .div.c{
+    right: 20px;
+    background-color: royalblue;
+    z-index: 4;
+    width: 100px;
+    height: 50px;
+}*/
+
+div img{
+    max-width: 100%;
+}
