@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.flex-containter{
+    display: flex;
+    background-color: black;
+    height: 50vh;
+    /*DIRECTION*/
+    /*row -> izquierda - derecha horizontal
+    row-reverse -> horizontal derecha-izquierda
+    column -> verticalmente arriba - abajo
+    column-reverse -> verticalmente abajo-arriba
+    */
+   /* flex-direction: column-reverse;*/
+  
+   /*
+    flex-wrap: wrap-reverse; ajuste 
+   nowrap los elementos se colocan en una sola linea
+    wrap los elementos se colocan en varias linea
+    wrap-revese varia lienas de abajo-arriba*/
+
+    flex-flow: row nowrap;
+
+    /*JUSTIFICAR CONTENIDO*/
+    justify-content: center ;
+    /* Aling Item*/
+    align-items: baseline;
+
+}
+
+.flex-containter div{
+    color:white;
+    background-color: red;
+    width: 100px;
+    height: 10vh;
+    margin: 2px;
+    border: 1px black dotted;
+}
+
+.cinco {
+    order:2;
+    align-self: baseline;
+}
+.uno, .dos{
+    order:1;
+}
+.tres, .cuatro{
+    order:3;
+}
+.principal{
+    display: flex;
+    background-color: black;
+    height: 20vh;
+}
+.principal .itemA{
+    width: 30%;
+    margin: 20px;
+    background-color: orange;
+}
+.principal .itemB{
+    width: 70%;
+    margin: 20px;
+    background-color: orange;
+}
+.secundaria{
+    display: flex;
+    background-color: black;
+ 
+}
+.secundaria .itemA{
+    width: 30%;
+    margin: 20px;
+    background-color: orange;
+}
+.secundaria .itemB{
+    width: 70%;
+    margin: 20px;
+    background-color: orange;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.secundaria .itemB div{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    margin: 30px;
+}
+
+.rotate{
+    transform: rotate(20deg);
+}
+.scale{
+    transform: scale(0.5,0.5);
+}
+.skewX{
+    transform: skewX(30deg);
+}
+.skewY{
+    transform: skewY(30deg);
+}
+.skew{
+    transform: skew(30deg,10deg); 
+}
+.trans{
+    width: 100px !important;
+    height: 100px !important;
+    transition: width 2s, height 4s, transform 6s;
+    transition-timing-function: ease;
+}
+.trans:hover{
+    width: 300px  !important;
+    height: 300px !important;
+    transform: rotate(180deg);
+}
+
+@keyframes nombreAnimacion{
+    0% { background-color: yellow; color:white; left: 0; top:0}
+    20% { background-color: red; color:white; left: 200px; top:0}
+    30% { background-color: green; color:yellow; left: 0; top:200px}
+    50% { background-color: blue; color:black; left: 0; top:200px}
+    100% { background-color: black; color:white; left: 0; top:0}
+}
+.animacion {
+    position: relative;
+ 
+    animation-name: nombreAnimacion;
+    animation-duration: 10s;
+    animation-iteration-count: 4;
+}
