@@ -1,0 +1,63 @@
+.form{
+    margin: 20px;
+    padding: 20px;
+    width: 400px;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+::placeholder{
+    color: red;
+    opacity: 0.5;
+}
+.form .input{
+    padding: 5px;
+    position: relative;
+}
+.form input{
+    outline: none;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+.form input:focus{
+    border: none;
+    border-bottom: 1px dotted red;
+    background-color:black;
+    color: white;
+    border-radius: 10px;
+}
+.form input:valid{
+    color: green;
+}
+.form input:invalid{
+    color: red;
+}
+.form input:required{
+    border: 1px solid #ff0000;
+}
+.form .submit button{
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+.fa-icons{
+    position: absolute;
+    left: 10px;
+    bottom: 8px;
+    font-size: 14px;
+    z-index: 1;
+}
+.form input:focus i{
+    color: white; 
+}/*
+.header{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    background-color: #ff0000;
+    height: 30vh;
+    z-index: 1;
+}*/
