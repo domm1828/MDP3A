@@ -1,0 +1,82 @@
+
+.col-1{
+    width: 8.33%;
+}
+.col-2{
+    width:16.66%;
+}
+.col-3{
+    width:25%;
+}
+.col-4{
+    width:33.33%;
+}
+[class*="col-"]{
+    background-color: blue;
+    margin: 10px;
+    border: 2px solid #000;
+    height: 100px;
+}
+/*RWD
+LA REGLA @media
+
+@media condicion {
+
+}
+@media (codicion) and (codicion){
+
+}
+TIPOS DE MEDIOS
+all => todos los dispositivos o medios.
+screen => monitores o pantallas
+print => previsualizacion de impresion
+*/
+
+@media print {
+    .col-2{
+        display: none;
+    }
+    [class*="col-"]{
+     width: 100%;
+    }
+}
+
+/* CONDICIONES MQ
+width
+min-width
+max-width
+orientation => landscape | portrait
+height
+min-height
+max-height
+
+*/
+.content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (min-width:600px) and (max-width:800px)  {
+    [class*="col-"]{
+        width: 33.33%;
+        background-color: white;
+       }
+    body{
+        background-color: red;
+    }
+}
+/* BREAKPOINTS responsive
+Exta Small => < 576px
+Small => >= 576px
+Medium => >=768px
+Large => >=992px
+Exta Large => >=1200px
+Extra Extra Larger => >= 1400px
+
+*/
+@media  (max-width:576px)  {
+    [class*="col-"]{
+        width: 40%;
+        background-color: white;
+       }
+}

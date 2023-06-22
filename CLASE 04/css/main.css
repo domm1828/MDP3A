@@ -152,3 +152,18 @@ main section p::first-letter{
 #menu ul ul li a:hover{
     color:red;
 }
+
+@media (max-width:576px) {
+    main,footer{
+        width: 100%;
+    }
+    main img{
+        max-width: 90%;
+    }
+    main section p{
+        font-size: 20px;
+    }
+    aside{
+        display: none;
+    }
+}
