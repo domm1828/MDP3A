@@ -1,0 +1,20 @@
+.container{
+    background-color: aqua;
+    height: 100px;
+    max-width: 100% !important;
+}
+.container-fluid{
+    
+    background-color: orange;
+    height: 100px;
+}
+.text-danger{
+    color: orange!important;
+}
+.text-color{
+    color: black;
+}
+.template_1{
+    --bs-columns:12 !important; 
+    --bs-gap:10px !important; 
+}
