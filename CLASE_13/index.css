@@ -1,0 +1,56 @@
+.redesSociales{
+    top: 25%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.088);
+    border-radius: 0px 10px 10px 0px;
+    z-index:99999;
+}
+.redesSociales ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.redesSociales ul li a {
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+.cardHover{
+    cursor: pointer;
+    height: 45vh;
+}
+.cardHover img{
+    height: 45vh;
+}
+.section2 .cardHover img{
+    height: auto!important;
+}
+.section2 .cardHover {
+    height: auto!important;
+}
+.cardHover:hover > a.btn{
+    display: inline-block !important;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+.cardHover:hover > img{
+    opacity: 0.3;
+}
+.carouselCss .carousel-item img{
+    height: 90vh;
+}
+.carouselCss .carousel-indicators button{
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 100%;
+    background-color: violet!important;
+}
+.avatar{
+    width: 200px;
+    height: 200px;
+}
+.cardRedes{
+    width: 50%;
+}
