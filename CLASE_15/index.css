@@ -1,0 +1,21 @@
+.flex-container{
+    display: flex;
+   flex-wrap: wrap;
+
+}
+.item1{
+    width: 100%;
+    background-color: red;
+    height: 50px;
+}
+
+.item2{
+    width: 70%;
+    background-color: blue;
+    height: 50px;
+}
+.item3{
+    width: 30%;
+    background-color: orange;
+    height: 50px;
+}
